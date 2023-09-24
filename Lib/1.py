@@ -3,13 +3,9 @@ num2 = int(input("Кінець діапазону: "))
 
 while num1 <= num2:
     print(num1, end="\f")
-    if num1 % 15==0:
-        print("| Fizz Buzz")
-    elif num1 % 3==0:
-        print("| Fizz")
-    elif num1 % 5==0:
-        print("| Buzz")
-
-    else:
-        print("  -")
+    if num1 % 3==0:
+        print("Fizz", end=' ')
+    if num1 % 5==0:
+        print("Buzz", end=' ')
     num1 += 1
+    print()
